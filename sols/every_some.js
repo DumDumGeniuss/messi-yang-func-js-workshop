@@ -1,5 +1,5 @@
 function checkUsersValid(goodUsers) {
-  const isOneOfElement = function (uncheckedUser) {
+  var isOneOfElement = function (uncheckedUser) {
     return goodUsers.some(function(validUser) {
       return validUser.id === uncheckedUser.id;
     });

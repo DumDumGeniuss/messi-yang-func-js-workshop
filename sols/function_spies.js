@@ -15,7 +15,7 @@ function Spy(target, method) {
   // I ran into infinite roop, so I use another way to implement it
   target[method] = function () {
     spyObj.count += 1;
-    return originFunc.apply(target, arguments)
+    return originFunc.apply(target, arguments);
   };
 
   return spyObj;
